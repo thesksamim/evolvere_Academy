@@ -1,4 +1,4 @@
-*{
+*:not(.logo){
     margin: 0;
     padding: 0%;
     font-family: 'Roboto Slab', serif;
@@ -8,7 +8,9 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/banner.png);
+    /* background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/banner.png); */
+    background-color:rgb(4, 4, 58);
+
     background-position: center;
     background-size:cover;
     position: relative;
@@ -24,12 +26,25 @@ nav{
     align-items: center;
 }
 
-nav img{
+/* nav img{
     width: 150px;
     
 
 
+} */
+
+.logo{
+    font-family: 'Audiowide', cursive;
+    color: #fff;
+    font-size: 20px;
+    padding-left: 50px;
+    /* padding-top: 20px; */
+
+
 }
+
+
+
 .nav-links{
     flex: 1;
     text-align: right;
@@ -147,7 +162,9 @@ nav .fa{
 
 /* courses */
 .course{
-    width: 80%;
+    width: 100%;
+    /* width is added as 100% later , first it was 80% */
+    background: rgb(221, 221, 18);
     margin: auto;
     text-align: center;
     padding-top: 100px;
@@ -170,6 +187,12 @@ nav .fa{
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
+
+    /* added later */
+    margin-left: 5%;
+    margin-right: 5%;
+
+
 }
 
 .course-col{
@@ -204,7 +227,8 @@ h3{
 /* campus */
 
 .campus{
-    width: 80%;
+    width: 100%;
+    background:rgb(221, 221, 18);
     margin: auto;
     text-align: center;
     padding-top: 50px;
@@ -258,7 +282,9 @@ h3{
 /* facilities */
 
 .facilities{
-    width: 80%;
+    width: 100%;   /* before 80% */
+    background:rgb(221, 221, 18); /* Added later */
+
     margin: auto;
     text-align: center;
     padding-top: 100px;
@@ -292,10 +318,16 @@ h3{
 
 /* testimonials */
 .testimonials{
-    width: 80%;
+    width: 100%;   /* before */
+    background:black; /* added later */
+    
+
     margin: auto;
     padding-top: 100px;
     text-align: center;
+}
+.testimonials h1{
+    color: #fff;
 }
 
 .testimonials-col{
@@ -340,20 +372,129 @@ h3{
 /* call to action */
 
 .cta{
-    margin: 100px auto;
-    width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/banner2.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
+    /* margin: 0px auto;
+    display: flex;
+    width: 100%;          /* before */
+    /* background:white;           added later */
+    /* background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('images/banner2.jpg'); */
+    /* background-position: center; */
+    /* background-size: cover; */
+    /* border-radius: 10px; */
+    /* text-align: center; */
+    /* padding: 10px 0; */ 
+
+    width: 100%;   /* before 80% */
+    /* background:rgb(221, 221, 18); Added later */
+
+    margin: auto;
     text-align: center;
-    padding: 100px 0;
+    padding-top: 100px;
+
+
 
 }
 
-.cta h1{
-    color: #fff;
-    margin-bottom: 40px;
+
+.founders{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    cursor: pointer;
+}
+
+
+.founders img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.founders h1{
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+    padding-left: 80px;
+}
+.founders p{
     padding: 0;
+    padding-left: 120px;
+}
+
+
+.founders:hover{
+    background: rgb(238, 13, 13);
+    color: #fff;
+}
+
+@media(max-width:600px){
+    #ceo h1{
+        padding-left: 40px;
+    }
+    
+
+    #generalist h1{
+        padding-left: 40px;
+    }
+
 
 }
+
+
+/* .social_media{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+} */
+
+/* .social_media:hover{
+    background: rgba(226,0,0,0.7);
+}
+
+.social_media i{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    transition: 0.5s;
+}
+
+.social_media i:hover{
+    bottom: 49%;
+    opacity: 1;
+} */
+
+
+
+
+
+
+
+
+/* .founders img{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
